@@ -7,7 +7,7 @@ pipeline{
     stages {
         stage("build"){
             steps{
-                sh "echo 'simular'" 
+                sh "bundle install" 
             }
         }
         stage("test"){
@@ -18,3 +18,4 @@ pipeline{
     
     }
 }
+ 
