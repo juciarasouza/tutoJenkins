@@ -12,7 +12,7 @@ pipeline{
         }
         stage("test"){
             steps{
-                sh "echo 'simulando testes'"
+                sh "bundle exec cucumber -p ci"
             }
         }
     
